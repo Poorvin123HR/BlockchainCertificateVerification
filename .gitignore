@@ -1,22 +1,49 @@
+
 # Python
 venv/
+.venv/
+.venv-slither/
 __pycache__/
-*.pyc
+*.py[cod]
 
-# Node
+# Node.js
 node_modules/
 
 # Environment files
 .env
+.env.*
+!.env.example
 
 # VS Code
 .vscode/
 
-# OS
+# Operating system
 .DS_Store
 Thumbs.db
 
-# Uploads
+# Python uploads and generated files
 backend/uploads/
 backend/certificates/
 backend/generated_qr/
+backend/data/
+
+# Test documents
+backend/tampered_certificate.pdf
+/test-certificate.pdf
+
+# Hardhat generated files
+blockchain/artifacts/
+blockchain/cache/
+blockchain/typechain-types/
+blockchain/node_modules/
+
+# Generated Merkle batch data
+blockchain/data/
+
+# Frontend generated files
+frontend/node_modules/
+frontend/dist/
+
+# Root-level virtual environments
+/.venv/
+/.venv-slither/
